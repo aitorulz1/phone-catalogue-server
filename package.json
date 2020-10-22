@@ -1,0 +1,17 @@
+{
+  "name": "phone-catalogue-server",
+  "version": "1.0.0",
+  "description": "phone catalogue project using good practices",
+  "main": "index.js",
+  "author": "Aitor Arina",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.9",
+    "nodemon": "^2.0.6"
+  }
+}
