@@ -37,6 +37,4 @@ const phoneSchema = new mongoose.Schema({
     });
 
     const Phones = mongoose.model('Phones', phoneSchema);
-
-
     module.exports = Phones;
