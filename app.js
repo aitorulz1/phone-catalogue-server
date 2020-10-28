@@ -1,22 +1,19 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
 
-require('dotenv/config');
+const phonesRoute = require('./routes/phones');
 
 
+require('./config/db')
+
+
+app.use(bodyParser.json());
 
 // Import routes
-const indexRoute = require('./routes/index');
+app.use('/phones', phonesRoute);
 
-app.use('/', indexRoute);
-
-
-// Connect to mongoose
-mongoose.connect(
-    process.env.MONGODB_URI,  { useNewUrlParser: true, useUnifiedTopology: true }, () => 
-    console.log('connected to MONGO DB')
-    );
 
 
 // Listen

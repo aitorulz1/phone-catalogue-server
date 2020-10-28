@@ -4,7 +4,7 @@ const phoneSchema = new mongoose.Schema({
     _id: Number,
     name: {
         type: String,
-        required: TextTrackCue,
+        required: true,
     },
     manufacturer: {
         type: String,
@@ -36,7 +36,7 @@ const phoneSchema = new mongoose.Schema({
         }
     });
 
-    const Phone = mongoose.model('Phoe', phoneSchema);
+    const Phones = mongoose.model('Phones', phoneSchema);
 
 
-    module.exports = Phone;
+    module.exports = Phones;

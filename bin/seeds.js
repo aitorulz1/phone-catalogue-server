@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 require('../config/db');
 
-const Phone = require('../models/Phone');
+const Phones = require('../models/Phones');
 
 const phones = [
 
@@ -114,7 +114,7 @@ const phones = [
 
 
 
-Phone.create(phones)
+Phones.create(phones)
   .then(() => {
     console.info("Seeds success:", phones);
     mongoose.connection.close();
