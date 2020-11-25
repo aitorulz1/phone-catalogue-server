@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "phone catalogue project using good practices",
   "main": "index.js",
+  "private": "true",
   "author": "Aitor Arina",
   "license": "MIT",
   "scripts": {

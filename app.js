@@ -28,8 +28,8 @@ app.use(express.json());
 
 
 // Import routes
-const phonesRoute = require('./routes/phones');
-app.use('/phones', phonesRoute);
+const router = require('./routes/phones');
+app.use('/', router);
 
 
 // Listen
