@@ -25,7 +25,7 @@ app.use(express.urlencoded({ extended: false }));
 
 // Import routes
 const router = require('./routes/phones');
-app.use('/phones', router);
+app.use('/', router);
 
 
 // Listen
